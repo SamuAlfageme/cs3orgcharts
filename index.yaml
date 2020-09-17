@@ -2,6 +2,18 @@ apiVersion: v1
 entries:
   revad:
   - apiVersion: v2
+    appVersion: v1.2.1
+    created: "2020-09-17T13:25:42.679535389Z"
+    description: The Reva daemon (revad) helm chart
+    digest: dd4fa147e9d1bac8dbfe9ac57d18e155a8d3b27ef23099ef1c29ecd0ec365421
+    home: https://reva.link
+    icon: https://reva.link/logo.svg
+    name: revad
+    type: application
+    urls:
+    - https://github.com/SamuAlfageme/charts/releases/download/revad-1.2.1/revad-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v2
     appVersion: v0.1.0
     created: "2020-04-21T10:12:41.974051961Z"
     description: The Reva daemon (revad) helm chart
@@ -13,4 +25,16 @@ entries:
     urls:
     - https://github.com/SamuAlfageme/charts/releases/download/revad-0.1.0/revad-0.1.0.tgz
     version: 0.1.0
+  wopiserver:
+  - apiVersion: v2
+    appVersion: v5.4
+    created: "2020-09-17T13:25:42.737807386Z"
+    description: A Vendor-neutral Web-application Open Platform Interface (WOPI) gateway
+      for EFSS systems
+    digest: 29aaaf4f51ddbb43b0fe6b2ace0888b7a87537683cd792b01de6aba1f1a93099
+    name: wopiserver
+    type: application
+    urls:
+    - https://github.com/SamuAlfageme/charts/releases/download/wopiserver-0.2.0/wopiserver-0.2.0.tgz
+    version: 0.2.0
 generated: "2020-04-21T10:12:41.567299879Z"
