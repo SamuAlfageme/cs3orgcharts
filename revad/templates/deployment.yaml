@@ -50,9 +50,17 @@ spec:
             {{- if .Values.extraVolumeMounts }}
               {{ toYaml .Values.extraVolumeMounts | nindent 12 }}
             {{- end }}
-          {{- if .Values.env }}
+          {{- if or .Values.env .Values.useStatefulSet }}
           env:
-              {{ toYaml .Values.env | nindent 12}}
+            {{- if .Values.useStatefulSet }}
+            - name: HOSTNAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            {{- end }}
+            {{- if .Values.env }}
+            {{ toYaml .Values.env | nindent 12 }}
+            {{- end }}
           {{- end }}
       volumes:
         - name: {{ include "revad.fullname" . }}-configfiles
