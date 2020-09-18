@@ -3,6 +3,18 @@ entries:
   revad:
   - apiVersion: v2
     appVersion: v1.2.1
+    created: "2020-09-18T08:34:50.816270003Z"
+    description: The Reva daemon (revad) helm chart
+    digest: 2c8d7d6747ea9d426c1ce423701e420200e2706a9648a9c81db987489d605905
+    home: https://reva.link
+    icon: https://reva.link/logo.svg
+    name: revad
+    type: application
+    urls:
+    - https://github.com/SamuAlfageme/charts/releases/download/revad-1.2.3/revad-1.2.3.tgz
+    version: 1.2.3
+  - apiVersion: v2
+    appVersion: v1.2.1
     created: "2020-09-17T14:56:44.751341589Z"
     description: The Reva daemon (revad) helm chart
     digest: c46213e7000b4ddc2bd04ba91b42f48dcfdfcd8021558c7e033513d034023516
